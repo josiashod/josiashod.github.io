@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Simulation V2V | Josias DJOSSOU-DAN</title>
+  <meta name="description" content="Étude du projet de simulation V2V de Josias DJOSSOU-DAN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/svg/site-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="./index.html" class="brand header-profile" aria-label="Accueil"><span class="profile-avatar">JD</span><span class="header-profile-text"><strong>Josias DJOSSOU-DAN</strong><small data-i18n="role">Développeur logiciel</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="./index.html#about" data-i18n="navAbout">À propos</a><a href="./index.html#skills" data-i18n="navSkills">Compétences</a><a href="./index.html#projects" data-i18n="navProjects">Projets</a><a href="./index.html#experience" data-i18n="navExperience">Expériences</a><a href="./index.html#education" data-i18n="navEducation">Formations</a><a href="./index.html#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      <button class="theme-switch nav-theme" type="button" data-theme-toggle aria-label="Changer le thème"><span class="theme-switch-track"><span class="theme-switch-thumb"></span></span><span class="theme-switch-label">Light</span></button>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Changer la langue">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-layout">
+        <div class="reveal">
+          <p class="project-kicker">C++ · Qt · SQLite</p>
+          <h1>Simulation V2V</h1>
+          <p data-i18n-fr="Outil de simulation de connexions véhicule à véhicule avec carte interactive, graphe routier et calcul d'itinéraires." data-i18n-en="Vehicle-to-vehicle connection simulation tool with interactive map, road graph and route calculation.">Outil de simulation de connexions véhicule à véhicule avec carte interactive, graphe routier et calcul d'itinéraires.</p>
+          <div class="project-actions"><a href="https://github.com/josiashod/reseau_v2v" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="viewCode">Voir le code</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-demo">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="demoEyebrow">Démo</p><h2 data-i18n="repoDemoTitle">Projet consultable dans le dépôt.</h2></div>
+        <div class="demo-placeholder reveal">
+          <div>
+            <p data-i18n-fr="Projet desktop C++/Qt. Le dépôt contient le code et les éléments nécessaires pour explorer la simulation localement." data-i18n-en="C++/Qt desktop project. The repository contains the code and required files to explore the simulation locally.">Projet desktop C++/Qt. Le dépôt contient le code et les éléments nécessaires pour explorer la simulation localement.</p>
+            <div class="project-actions demo-actions"><a href="https://github.com/josiashod/reseau_v2v" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="goCode">Aller au code</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-detail-grid">
+        <article class="project-copy reveal">
+          <h2 data-i18n="projectDescription">Description du projet</h2>
+          <p data-i18n-fr="Simulation de connexions V2V basée sur des données géographiques OpenStreetMap pour reconstituer une carte de Mulhouse et modéliser le réseau routier." data-i18n-en="V2V connection simulation based on OpenStreetMap geographic data to recreate a Mulhouse map and model the road network.">Simulation de connexions V2V basée sur des données géographiques OpenStreetMap pour reconstituer une carte de Mulhouse et modéliser le réseau routier.</p>
+          <p data-i18n-fr="Le projet intègre un graphe non orienté, le calcul d'itinéraires avec Dijkstra, une base SQLite et un moteur de mouvement fluide." data-i18n-en="The project includes an undirected graph, route calculation with Dijkstra, a SQLite database and a smooth movement engine.">Le projet intègre un graphe non orienté, le calcul d'itinéraires avec Dijkstra, une base SQLite et un moteur de mouvement fluide.</p>
+        </article>
+        <aside class="project-side">
+          <div class="project-panel reveal"><h3 data-i18n="projectTech">Technologies utilisées</h3><div class="project-tags"><span>C++</span><span>Qt</span><span>SQLite</span><span>OpenStreetMap</span><span>Dijkstra</span></div></div>
+          <div class="project-panel reveal"><h3 data-i18n="projectSkills">Compétences développées</h3><ul class="detail-list"><li data-i18n-fr="Modélisation de graphe routier." data-i18n-en="Road graph modeling.">Modélisation de graphe routier.</li><li data-i18n-fr="Lecture et traitement de données géographiques." data-i18n-en="Reading and processing geographic data.">Lecture et traitement de données géographiques.</li><li data-i18n-fr="Stockage et récupération de données avec SQLite." data-i18n-en="Data storage and retrieval with SQLite.">Stockage et récupération de données avec SQLite.</li><li data-i18n-fr="Optimisation CPU via gestion asynchrone des cycles de calcul." data-i18n-en="CPU optimization through asynchronous calculation-cycle management.">Optimisation CPU via gestion asynchrone des cycles de calcul.</li><li data-i18n-fr="Conception d'une simulation interactive." data-i18n-en="Interactive simulation design.">Conception d'une simulation interactive.</li></ul></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Josias DJOSSOU-DAN.</p><a href="./index.html#projects" data-i18n="navProjects"><span data-i18n="backProjects">Retour aux projets</span></a></footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>

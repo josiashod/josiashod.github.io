@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Boids | Josias DJOSSOU-DAN</title>
+  <meta name="description" content="Étude du projet Boids de Josias DJOSSOU-DAN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/svg/site-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="./index.html" class="brand header-profile" aria-label="Accueil"><span class="profile-avatar">JD</span><span class="header-profile-text"><strong>Josias DJOSSOU-DAN</strong><small data-i18n="role">Développeur logiciel</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="./index.html#about" data-i18n="navAbout">À propos</a><a href="./index.html#skills" data-i18n="navSkills">Compétences</a><a href="./index.html#projects" data-i18n="navProjects">Projets</a><a href="./index.html#experience" data-i18n="navExperience">Expériences</a><a href="./index.html#education" data-i18n="navEducation">Formations</a><a href="./index.html#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      <button class="theme-switch nav-theme" type="button" data-theme-toggle aria-label="Changer le thème"><span class="theme-switch-track"><span class="theme-switch-thumb"></span></span><span class="theme-switch-label">Light</span></button>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Changer la langue">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-layout">
+        <div class="reveal">
+          <p class="project-kicker">Python · Pygame</p>
+          <h1>Simulation Boids</h1>
+          <p data-i18n-fr="Simulation de comportements collectifs inspirée des essaims, avec agents autonomes et calcul vectoriel." data-i18n-en="Collective behavior simulation inspired by swarms, with autonomous agents and vector calculation.">Simulation de comportements collectifs inspirée des essaims, avec agents autonomes et calcul vectoriel.</p>
+          <div class="project-actions"><a href="https://github.com/josiashod/boids" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="viewCode">Voir le code</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-demo">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="demoEyebrow">Démo</p><h2 data-i18n="repoDemoTitle">Projet consultable dans le dépôt.</h2></div>
+        <div class="demo-placeholder reveal">
+          <div>
+            <p data-i18n-fr="Projet Python/Pygame à exécuter localement pour observer la simulation des agents et leurs interactions." data-i18n-en="Python/Pygame project to run locally in order to observe the agent simulation and their interactions.">Projet Python/Pygame à exécuter localement pour observer la simulation des agents et leurs interactions.</p>
+            <div class="project-actions demo-actions"><a href="https://github.com/josiashod/boids" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="goCode">Aller au code</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-detail-grid">
+        <article class="project-copy reveal">
+          <h2 data-i18n="projectDescription">Description du projet</h2>
+          <p data-i18n-fr="Simulation de comportements collectifs d'agents autonomes, basée sur les règles de séparation, alignement et cohésion." data-i18n-en="Collective behavior simulation for autonomous agents, based on separation, alignment and cohesion rules.">Simulation de comportements collectifs d'agents autonomes, basée sur les règles de séparation, alignement et cohésion.</p>
+          <p data-i18n-fr="L'objectif est de modéliser des comportements proches d'un essaim à partir de règles locales simples." data-i18n-en="The goal is to model swarm-like behavior from simple local rules.">L'objectif est de modéliser des comportements proches d'un essaim à partir de règles locales simples.</p>
+        </article>
+        <aside class="project-side">
+          <div class="project-panel reveal"><h3 data-i18n="projectTech">Technologies utilisées</h3><div class="project-tags"><span>Python</span><span>Pygame</span><span data-i18n-fr="POO" data-i18n-en="OOP">POO</span><span data-i18n-fr="Calcul vectoriel" data-i18n-en="Vector math">Calcul vectoriel</span></div></div>
+          <div class="project-panel reveal"><h3 data-i18n="projectSkills">Compétences développées</h3><ul class="detail-list"><li data-i18n-fr="Modélisation orientée objet." data-i18n-en="Object-oriented modeling.">Modélisation orientée objet.</li><li data-i18n-fr="Calcul vectoriel pour agents autonomes." data-i18n-en="Vector calculations for autonomous agents.">Calcul vectoriel pour agents autonomes.</li><li data-i18n-fr="Simulation de règles comportementales." data-i18n-en="Behavioral rule simulation.">Simulation de règles comportementales.</li><li data-i18n-fr="Gestion d'une boucle de rendu Pygame." data-i18n-en="Pygame rendering-loop management.">Gestion d'une boucle de rendu Pygame.</li><li data-i18n-fr="Observation et ajustement de paramètres." data-i18n-en="Observation and parameter tuning.">Observation et ajustement de paramètres.</li></ul></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Josias DJOSSOU-DAN.</p><a href="./index.html#projects" data-i18n="navProjects"><span data-i18n="backProjects">Retour aux projets</span></a></footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
