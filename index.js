@@ -8,36 +8,51 @@ const themeToggle = document.querySelector('[data-theme-toggle]');
 const themeLabel = document.querySelector('.theme-switch-label');
 const langToggle = document.querySelector('[data-lang-toggle]');
 const cvLink = document.querySelector('[data-cv-link]');
+const githubProjectsContainer = document.querySelector('[data-github-projects]');
+const githubProjectsStatus = document.querySelector('[data-github-status]');
+const terminalOutput = document.querySelector('[data-terminal-output]');
 
 const translations = {
   fr: {
-    role: 'Développeur logiciel',
+    role: 'Ingénieur logiciel',
     navAbout: 'À propos',
     navSkills: 'Compétences',
     navProjects: 'Projets',
     navExperience: 'Expériences',
     navEducation: 'Formations',
     navContact: 'Contact',
-    heroKicker: 'Développeur logiciel · CDI',
-    heroText: 'Développeur logiciel orienté optimisation, algorithmie et outils métiers. Je recherche un CDI pour contribuer à des projets exigeants, maintenables et performants.',
+    heroKicker: 'Ingénieur logiciel · CDI',
+    heroText: "Ingénieur logiciel orienté algorithmie, outils métiers et l'optimisation. Je recherche un CDI pour contribuer à des projets exigeants, maintenables et performants.",
     heroProjects: 'Explorer les projets',
     heroContact: 'Me contacter',
     heroCv: 'Télécharger le CV',
     aboutEyebrow: 'À propos',
-    aboutTitle: 'Développement logiciel, performance et interfaces utiles.',
+    aboutTitle: 'Coder des outils fiables, rapides et vraiment utilisables.',
     aboutWhoTitle: 'Qui je suis',
-    aboutWhoText: "Développeur logiciel avec une expérience chez Siemens Mobility, je travaille sur l'optimisation, les outils d'analyse et les applications en C++, Qt, Python et web.",
+    aboutWhoText: "Ingénieur logiciel avec une expérience chez Siemens Mobility, je travaille sur l'optimisation, les outils d'analyse et les applications en C++, Qt et Python.",
     aboutGoal: 'Je recherche un CDI en développement logiciel, avec un intérêt fort pour la performance et la qualité.',
     aboutWorkTitle: 'Ma façon de travailler',
     aboutWork1: "Optimisation d'algorithmes et profiling.",
-    aboutWork2: 'Interfaces Qt, PyQt, Swing et web.',
+    aboutWork2: 'Interfaces Qt, PyQt et Swing.',
     aboutWork3: 'Tests, documentation et non-régression.',
     aboutWork4: 'Travail en équipe Agile/Scrum.',
+    knowHowTitle: 'Ce que je sais faire.',
+    knowHow1: 'Concevoir et maintenir un logiciel',
+    knowHow2: 'Tester un logiciel',
+    knowHow3: 'Effectuer des intégrations continues et des déploiements continus (CI/CD)',
+    knowHow4: "Optimiser les performances d'un logiciel",
+    knowHow5: "Autodidacte, curieux, esprit d'équipe, sens du détail",
     skillsEyebrow: 'Compétences',
     skillsTitle: 'Stack technique.',
     projectsEyebrow: 'Projets',
     projectsTitle: 'Projets.',
     studyProject: 'Étudier le projet',
+    moreProjects: 'Voir plus de projets',
+    githubLoading: 'Chargement des dépôts GitHub publics...',
+    githubEmpty: 'Aucun dépôt GitHub public pertinent à ajouter pour le moment.',
+    githubError: 'Impossible de charger les dépôts GitHub pour le moment.',
+    githubDatePrefix: 'Créé en',
+    githubLink: 'Voir sur GitHub',
     experienceEyebrow: 'Expériences',
     experienceTitle: 'Parcours professionnelles.',
     exp1Title: 'Ingénieur logiciel en apprentissage · Siemens Mobility',
@@ -59,7 +74,7 @@ const translations = {
     educationEyebrow: 'Formations',
     educationTitle: 'Parcours académique.',
     contactEyebrow: 'Contact',
-    contactTitle: 'Parlons CDI ou projet logiciel.',
+    contactTitle: 'Parlons projet.',
     contactIntro: 'Pour une opportunité CDI, une mission ou un projet logiciel.',
     formName: 'Nom',
     formEmail: 'Email',
@@ -86,33 +101,45 @@ const translations = {
     cv: './assets/pdf/josias_djossou-dan_cv_fr.pdf'
   },
   en: {
-    role: 'Software Developer',
+    role: 'Software engineer',
     navAbout: 'About',
     navSkills: 'Skills',
     navProjects: 'Projects',
     navExperience: 'Experience',
     navEducation: 'Education',
     navContact: 'Contact',
-    heroKicker: 'Software Developer · Full-time',
-    heroText: 'Software developer focused on optimization, algorithms and business tools. I am looking for a full-time role where I can contribute to demanding, maintainable and performant projects.',
+    heroKicker: 'Software engineer · Full-time',
+    heroText: 'Software engineer focused on algorithms, business tools and optimization. I am looking for a full-time role where I can contribute to demanding, maintainable and performant projects.',
     heroProjects: 'Explore projects',
     heroContact: 'Contact me',
     heroCv: 'Download resume',
     aboutEyebrow: 'About',
-    aboutTitle: 'Software development, performance and useful interfaces.',
+    aboutTitle: 'Building reliable, fast and genuinely useful tools.',
     aboutWhoTitle: 'Profile',
-    aboutWhoText: 'Software developer with experience at Siemens Mobility, working on optimization, analysis tools and applications in C++, Qt, Python and web technologies.',
+    aboutWhoText: 'Software engineer with experience at Siemens Mobility, working on optimization, analysis tools and applications in C++, Qt and Python.',
     aboutGoal: 'I am looking for a full-time software development role, with a strong interest in performance and quality.',
     aboutWorkTitle: 'How I work',
     aboutWork1: 'Algorithm optimization and profiling.',
-    aboutWork2: 'Qt, PyQt, Swing and web interfaces.',
+    aboutWork2: 'Qt, PyQt and Swing interfaces.',
     aboutWork3: 'Testing, documentation and non-regression.',
     aboutWork4: 'Agile/Scrum teamwork.',
+    knowHowTitle: 'What I can do.',
+    knowHow1: 'Design and maintain software',
+    knowHow2: 'Test software',
+    knowHow3: 'Set up continuous integration and continuous deployment (CI/CD)',
+    knowHow4: 'Optimize software performance',
+    knowHow5: 'Self-taught, curious, team-minded, detail-oriented',
     skillsEyebrow: 'Skills',
     skillsTitle: 'Technical stack.',
     projectsEyebrow: 'Projects',
     projectsTitle: 'Projects.',
     studyProject: 'View project',
+    moreProjects: 'See more projects',
+    githubLoading: 'Loading public GitHub repositories...',
+    githubEmpty: 'No relevant public GitHub repositories to add for now.',
+    githubError: 'Unable to load GitHub repositories right now.',
+    githubDatePrefix: 'Created in',
+    githubLink: 'View on GitHub',
     experienceEyebrow: 'Professional experience',
     experienceTitle: 'Field experience.',
     exp1Title: 'Software Engineer Apprentice · Siemens Mobility',
@@ -134,8 +161,8 @@ const translations = {
     educationEyebrow: 'Education',
     educationTitle: 'Academic background.',
     contactEyebrow: 'Contact',
-    contactTitle: 'Let’s talk full-time role or software project.',
-    contactIntro: 'For a full-time opportunity, a mission or a software project.',
+    contactTitle: 'Let’s talk project.',
+    contactIntro: 'For a full-time opportunity, a mission or a project.',
     formName: 'Name',
     formEmail: 'Email',
     formSubject: 'Subject',
@@ -162,7 +189,139 @@ const translations = {
   }
 };
 
+const terminalTemplates = {
+  fr: `<b>$</b> whoami
+ingenieur_logiciel
+
+<b>$</b> cat focus.json
+{
+  "domaines": ["logiciel", "performance", "outils metiers"],
+  "langages": ["C++", "Python", "JavaScript", "SQL"],
+  "frameworks": ["Qt", "PyQt", "React"],
+  "pratiques": ["tests", "CI/CD", "profiling", "documentation"]
+}
+
+<b>$</b> run highlights
+✓ optimisation simulation ferroviaire
+✓ analyse de logs avec interface Qt
+✓ simulations V2V et agents autonomes
+✓ applications web interactives
+
+<b>$</b> status --career
+recherche: CDI developpement logiciel
+localisation: France
+mode: curieux + rigoureux + equipe
+
+<b>$</b> <span class="terminal-cursor">_</span>`,
+  en: `<b>$</b> whoami
+software_engineer
+
+<b>$</b> cat focus.json
+{
+  "domains": ["software", "performance", "business tools"],
+  "languages": ["C++", "Python", "JavaScript", "SQL"],
+  "frameworks": ["Qt", "PyQt", "React"],
+  "practices": ["testing", "CI/CD", "profiling", "documentation"]
+}
+
+<b>$</b> run highlights
+✓ railway simulation optimization
+✓ log analysis tool with Qt interface
+✓ V2V and autonomous-agent simulations
+✓ interactive web applications
+
+<b>$</b> status --career
+search: full-time software role
+location: France
+mode: curious + rigorous + team-minded
+
+<b>$</b> <span class="terminal-cursor">_</span>`
+};
+
 let currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+let githubRepos = [];
+
+const staticProjectNames = new Set([
+  'reseau_v2v',
+  'boids',
+  'pomodoro',
+  'minesweeper_game',
+  'memoryCard',
+  'nature_protector',
+  'simple_shell',
+  'birthday',
+  'calculatrice'
+]);
+
+const relevantRepoLanguages = new Set([
+  'C',
+  'C++',
+  'Python',
+  'JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'PHP',
+  'Java'
+]);
+
+const formatGithubDate = (date) => {
+  if (!date) return '';
+  return new Intl.DateTimeFormat(currentLang === 'fr' ? 'fr-FR' : 'en-US', {
+    month: 'short',
+    year: 'numeric'
+  }).format(new Date(date));
+};
+
+const isRelevantRepo = (repo) => {
+  if (!repo || repo.fork || repo.archived || repo.private) return false;
+  if (staticProjectNames.has(repo.name)) return false;
+  if (repo.name === 'josiashod.github.io') return false;
+  return relevantRepoLanguages.has(repo.language) || repo.description;
+};
+
+const renderGithubProjects = () => {
+  if (!githubProjectsContainer) return;
+
+  githubProjectsContainer.innerHTML = '';
+
+  if (!githubRepos.length) {
+    if (githubProjectsStatus) githubProjectsStatus.textContent = translations[currentLang].githubEmpty;
+    return;
+  }
+
+  if (githubProjectsStatus) githubProjectsStatus.textContent = '';
+
+  githubRepos.forEach((repo) => {
+    const card = document.createElement('article');
+    card.className = 'project-card simple reveal in-view';
+
+    const body = document.createElement('div');
+    body.className = 'project-body';
+
+    const type = document.createElement('p');
+    type.className = 'project-type';
+    type.textContent = [repo.language, `${translations[currentLang].githubDatePrefix} ${formatGithubDate(repo.created_at)}`]
+      .filter(Boolean)
+      .join(' · ');
+
+    const title = document.createElement('h3');
+    title.textContent = repo.name.replaceAll('-', ' ');
+
+    const description = document.createElement('p');
+    description.textContent = repo.description || (currentLang === 'fr' ? 'Dépôt public GitHub.' : 'Public GitHub repository.');
+
+    const link = document.createElement('a');
+    link.href = repo.html_url;
+    link.target = '_blank';
+    link.rel = 'noreferrer';
+    link.textContent = translations[currentLang].githubLink;
+
+    body.append(type, title, description, link);
+    card.append(body);
+    githubProjectsContainer.append(card);
+  });
+};
 
 const setLanguage = (lang) => {
   currentLang = lang;
@@ -188,6 +347,8 @@ const setLanguage = (lang) => {
 
   if (cvLink) cvLink.href = dictionary.cv;
   if (langToggle) langToggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+  if (terminalOutput) terminalOutput.innerHTML = terminalTemplates[lang];
+  renderGithubProjects();
 };
 
 const setTheme = (theme) => {
@@ -275,6 +436,33 @@ if (sections.length) {
     navObserver.observe(section);
   });
 }
+
+const loadGithubProjects = async () => {
+  if (!githubProjectsContainer) return;
+
+  if (githubProjectsStatus) {
+    githubProjectsStatus.textContent = translations[currentLang].githubLoading;
+  }
+
+  try {
+    const response = await fetch('https://api.github.com/users/josiashod/repos?per_page=100&sort=updated');
+    if (!response.ok) throw new Error('GitHub request failed');
+
+    const repos = await response.json();
+    githubRepos = repos
+      .filter(isRelevantRepo)
+      .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+      .slice(0, 12);
+
+    renderGithubProjects();
+  } catch (error) {
+    if (githubProjectsStatus) {
+      githubProjectsStatus.textContent = translations[currentLang].githubError;
+    }
+  }
+};
+
+loadGithubProjects();
 
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Portfolio de Josias DJOSSOU-DAN, développeur logiciel.">
+  <meta name="description" content="Portfolio de Josias DJOSSOU-DAN, Ingénieur logiciel.">
   <title>Josias DJOSSOU-DAN | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080c14'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%2300c878'>JD</text></svg>" type="image/svg+xml">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f8f83b3'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%23fff'>JD</text></svg>" type="image/svg+xml">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <span class="profile-avatar">JD</span>
       <span class="header-profile-text">
         <strong>Josias DJOSSOU-DAN</strong>
-        <small data-i18n="role">Développeur logiciel</small>
+        <small data-i18n="role">Ingénieur logiciel</small>
       </span>
     </a>
 
@@ -50,10 +50,10 @@
     <section class="hero" id="home">
       <div class="container hero-layout">
         <div class="hero-copy reveal">
-          <p class="hero-kicker"><span class="hero-kicker-dot"></span><span data-i18n="heroKicker">Développeur logiciel · CDI</span></p>
+          <p class="hero-kicker"><span class="hero-kicker-dot"></span><span data-i18n="heroKicker">Ingénieur logiciel · CDI</span></p>
           <h1>Josias <strong>DJOSSOU-DAN</strong></h1>
           <p class="hero-text">
-            <span data-i18n="heroText">Développeur logiciel orienté optimisation, algorithmie et outils métiers. Je
+            <span data-i18n="heroText">Ingénieur logiciel orienté algorithmie et outils métiers. Je
               recherche un CDI pour
               contribuer à des projets exigeants, maintenables et performants.</span>
           </p>
@@ -75,12 +75,28 @@
 
         <aside class="hero-dashboard reveal" aria-label="Résumé du profil">
           <div class="terminal">
-            <div class="terminal-top"><span></span><span></span><span></span></div>
-            <pre><b>$</b> cat profile.txt
-role: developpeur_logiciel
-stack: c++ qt python react sql
-goal: cdi developpement logiciel
-location: Mulhouse, France</pre>
+            <div class="terminal-top"><span></span><span></span><span></span><strong>josias@portfolio:~</strong></div>
+            <pre data-terminal-output><b>$</b> whoami
+ingenieur_logiciel
+
+<b>$</b> cat focus.json
+{
+  "domaines": ["logiciel", "performance", "outils metiers"],
+  "langages": ["C++", "Python", "JavaScript", "SQL"],
+  "frameworks": ["Qt", "PyQt", "React"],
+  "pratiques": ["tests", "CI/CD", "profiling", "documentation"]
+}
+
+<b>$</b> run highlights
+✓ optimisation simulation ferroviaire
+✓ analyse de logs avec interface Qt
+✓ simulations V2V et agents autonomes
+✓ applications web interactives
+
+<b>$</b> status --career
+recherche: CDI developpement logiciel
+localisation: France
+mode: curieux + rigoureux + equipe</pre>
 
           </div>
         </aside>
@@ -91,32 +107,32 @@ location: Mulhouse, France</pre>
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow" data-i18n="aboutEyebrow">À propos</p>
-          <h2 data-i18n="aboutTitle">Développement logiciel, performance et interfaces utiles.</h2>
+          <h2 data-i18n="aboutTitle">Coder des outils fiables, rapides et vraiment utilisables.</h2>
         </div>
 
-        <div class="about-grid">
-          <article class="about-card featured reveal">
-            <div>
+        <div class="about-flat reveal">
+          <div class="about-columns">
+            <div class="about-intro">
               <h3 data-i18n="aboutWhoTitle">Qui je suis</h3>
               <p>
-                <span data-i18n="aboutWhoText">Développeur logiciel avec une expérience chez Siemens Mobility, je
-                  travaille sur l'optimisation, les
-                  outils d'analyse et les applications en C++, Qt, Python et web.</span>
+                <span data-i18n="aboutWhoText">Ingénieur logiciel avec une expérience chez Siemens Mobility, je
+                  travaille sur l'optimisation, les outils d'analyse et les applications en C++, Qt et Python.</span>
               </p>
+              <p data-i18n="aboutGoal">Je recherche un CDI en développement logiciel, avec un intérêt fort pour la
+                performance et la qualité.</p>
             </div>
-            <p data-i18n="aboutGoal">Je recherche un CDI en développement logiciel, avec un intérêt fort pour la
-              performance et la qualité.</p>
-          </article>
 
-          <article class="about-card reveal">
-            <h3 data-i18n="aboutWorkTitle">Ma façon de travailler</h3>
-            <ul class="about-list">
-              <li data-i18n="aboutWork1">Optimisation d'algorithmes et profiling.</li>
-              <li data-i18n="aboutWork2">Interfaces Qt, PyQt, Swing et web.</li>
-              <li data-i18n="aboutWork3">Tests, documentation et non-régression.</li>
-              <li data-i18n="aboutWork4">Travail en équipe Agile/Scrum.</li>
-            </ul>
-          </article>
+            <div class="about-know-how">
+              <h3 data-i18n="knowHowTitle">Ce que je sais faire.</h3>
+              <div class="know-how-list">
+                <span data-i18n="knowHow1">Concevoir et maintenir un logiciel</span>
+                <span data-i18n="knowHow2">Tester un logiciel</span>
+                <span data-i18n="knowHow3">Effectuer des intégrations continues et des déploiements continus (CI/CD)</span>
+                <span data-i18n="knowHow4">Optimiser les performances d'un logiciel</span>
+                <span data-i18n="knowHow5">Autodidacte, curieux, esprit d'équipe, sens du détail</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,14 +167,18 @@ location: Mulhouse, France</pre>
           <article class="skill-card reveal">
             <h3>Web</h3>
             <div class="skill-badges">
-              <span>React</span><span>Next.js</span><span>HTML/CSS</span><span>Laravel</span><span>Symfony</span><span>Django</span><span>AdonisJS</span>
+              <span>React</span><span>Next.js</span><span>HTML/CSS</span><span>Laravel</span><span>Symfony</span><span>Django</span><span>Adonis.JS</span>
             </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Mobile</h3>
+            <div class="skill-badges">
+              <span>React Native</span><span>Android Java</span></div>
           </article>
           <article class="skill-card reveal">
             <h3 data-i18n-fr="Tests" data-i18n-en="Testing">Tests</h3>
             <div class="skill-badges">
-              <span>Doctest</span><span>Pytest</span><span>JUnit</span><span data-i18n-fr="Tests de non-régression" data-i18n-en="Non-regression tests">Tests de non-régression</span>
-            </div>
+              <span>Doctest</span><span>Pytest</span><span>JUnit</span><span>PHPUnit</span></div>
           </article>
           <article class="skill-card reveal">
             <h3 data-i18n-fr="Bases de données" data-i18n-en="Databases">Bases de données</h3>
@@ -170,13 +190,13 @@ location: Mulhouse, France</pre>
             <h3 data-i18n-fr="Outils" data-i18n-en="Tools">Outils</h3>
             <div class="skill-badges">
               <span>Git</span><span>VS Code</span><span>Qt
-                Creator</span><span>Jira</span><span>Trello</span><span>Modelio</span><span>Mermaid</span>
+                Creator</span><span>Netbeans</span><span>Jira</span><span>Trello</span><span>Modelio</span><span>Mermaid</span><span>Valgrind</span>
             </div>
           </article>
           <article class="skill-card reveal">
-            <h3 data-i18n-fr="Méthodes" data-i18n-en="Methods">Méthodes</h3>
+            <h3 data-i18n-fr="Méthodologie" data-i18n-en="Methodology">Méthodologie</h3>
             <div class="skill-badges">
-              <span>Agile</span><span>Scrum</span><span>Documentation</span><span>Profiling</span><span>Performance</span>
+              <span>Agile</span><span>Scrum</span><span>UML</span><span>Merise</span>
             </div>
           </article>
         </div>
@@ -308,57 +328,16 @@ location: Mulhouse, France</pre>
 
           <article class="project-card simple reveal">
             <div class="project-body">
-              <p class="project-type">HTML · CSS · jQuery</p>
-              <h3>Random Quote Machine</h3>
-              <p data-i18n-fr="Générateur aléatoire de citations pour pratiquer les interactions simples." data-i18n-en="Random quote generator built to practice simple interactions.">Générateur aléatoire de citations pour pratiquer les interactions simples.</p>
-              <a href="./random_quote.html"><span data-i18n="studyProject">Étudier le projet</span></a>
-            </div>
-          </article>
-
-          <article class="project-card simple reveal">
-            <div class="project-body">
               <p class="project-type" data-i18n-fr="React · Calcul" data-i18n-en="React · Calculator">React · Calcul</p>
               <h3 data-i18n-fr="E-Calculatrice" data-i18n-en="E-Calculator">E-Calculatrice</h3>
               <p data-i18n-fr="Calculatrice web pour travailler les composants, les états et l'affichage dynamique." data-i18n-en="Web calculator focused on components, state management and dynamic rendering.">Calculatrice web pour travailler les composants, les états et l'affichage dynamique.</p>
               <a href="./calculatrice.html"><span data-i18n="studyProject">Étudier le projet</span></a>
             </div>
           </article>
+        </div>
 
-          <article class="project-card simple reveal">
-            <div class="project-body">
-              <p class="project-type" data-i18n-fr="JavaScript · Jeu" data-i18n-en="JavaScript · Game">JavaScript · Jeu</p>
-              <h3>Memory Card</h3>
-              <p data-i18n-fr="Jeu de mémoire basé sur la manipulation du DOM et la logique de partie." data-i18n-en="Memory game based on DOM manipulation and game-state logic.">Jeu de mémoire basé sur la manipulation du DOM et la logique de partie.</p>
-              <a href="./memory_card.html"><span data-i18n="studyProject">Étudier le projet</span></a>
-            </div>
-          </article>
-
-          <article class="project-card simple reveal">
-            <div class="project-body">
-              <p class="project-type" data-i18n-fr="Site statique" data-i18n-en="Static website">Site statique</p>
-              <h3>Nature Protector</h3>
-              <p data-i18n-fr="One-page statique pour pratiquer la mise en page et le responsive." data-i18n-en="Static one-page website built to practice layout and responsiveness.">One-page statique pour pratiquer la mise en page et le responsive.</p>
-              <a href="./nature_protector.html"><span data-i18n="studyProject">Étudier le projet</span></a>
-            </div>
-          </article>
-
-          <article class="project-card simple reveal">
-            <div class="project-body">
-              <p class="project-type">HTML · CSS</p>
-              <h3>My Tribute Page</h3>
-              <p data-i18n-fr="Page statique personnelle, centrée sur la structure et la présentation." data-i18n-en="Personal static page focused on structure and presentation.">Page statique personnelle, centrée sur la structure et la présentation.</p>
-              <a href="./tribute_page.html"><span data-i18n="studyProject">Étudier le projet</span></a>
-            </div>
-          </article>
-
-          <article class="project-card simple reveal">
-            <div class="project-body">
-              <p class="project-type" data-i18n-fr="C · Système" data-i18n-en="C · Systems">C · Système</p>
-              <h3>Simple Shell</h3>
-              <p data-i18n-fr="Shell en C pour comprendre l'exécution de commandes et les bases système." data-i18n-en="C shell project to understand command execution and systems programming basics.">Shell en C pour comprendre l'exécution de commandes et les bases système.</p>
-              <a href="./simple_shell.html"><span data-i18n="studyProject">Étudier le projet</span></a>
-            </div>
-          </article>
+        <div class="projects-more reveal">
+          <a href="./projects.html" class="btn btn-ghost" data-i18n="moreProjects">Voir plus de projets</a>
         </div>
       </div>
     </section>
@@ -367,9 +346,9 @@ location: Mulhouse, France</pre>
       <div class="container contact-layout">
         <div class="contact-card reveal">
           <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
-          <h2 data-i18n="contactTitle">Parlons CDI ou projet logiciel.</h2>
+          <h2 data-i18n="contactTitle">Parlons projet logiciel.</h2>
           <p class="contact-intro">
-            <span data-i18n="contactIntro">Pour une opportunité CDI, une mission ou un projet logiciel.</span>
+            <span data-i18n="contactIntro">Pour une opportunité.</span>
           </p>
 
           <div class="contact-list">
