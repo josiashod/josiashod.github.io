@@ -2,351 +2,453 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Josiashod | Portfolio</title>
-  <meta name="description" content="My personal Portfolio" />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Portfolio de Josias DJOSSOU-DAN, développeur logiciel.">
+  <title>Josias DJOSSOU-DAN | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080c14'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%2300c878'>JD</text></svg>" type="image/svg+xml">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/IMG_1081.jpg" alt="Josias DJOSSOU-DAN Image" class="header__logo-img" />
-        </div>
-        <span class="header__logo-sub">Josias DJOSSOU-DAN</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="./" class="header__link"> Accueil </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#about" class="header__link">À propos de moi</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#projects" class="header__link">
-              Projets
-            </a>
-          </li>
-          <!-- <li class="header__link-wrapper">
-            <a href="#contact" class="header__link"> Contacts </a>
-          </li> -->
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="./"> Accueil </a>
-          </li>
+  <header class="site-header">
+    <a href="#home" class="brand header-profile" aria-label="Accueil">
+      <span class="profile-avatar">JD</span>
+      <span class="header-profile-text">
+        <strong>Josias DJOSSOU-DAN</strong>
+        <small data-i18n="role">Développeur logiciel</small>
+      </span>
+    </a>
 
-          <li class="header__sm-menu-link">
-            <a href="./#about"> À propos de moi </a>
-          </li>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-          <li class="header__sm-menu-link">
-            <a href="./#projects"> Projets </a>
-          </li>
-
-          <!-- <li class="header__sm-menu-link">
-            <a href="./#contact"> Contact </a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="#about" data-i18n="navAbout">À propos</a>
+      <a href="#skills" data-i18n="navSkills">Compétences</a>
+      <a href="#experience" data-i18n="navExperience">Expériences</a>
+      <a href="#education" data-i18n="navEducation">Formations</a>
+      <a href="#projects" data-i18n="navProjects">Projets</a>
+      <a href="#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      <button class="theme-switch nav-theme" type="button" data-theme-toggle aria-label="Changer le thème"><span
+          class="theme-switch-track"><span class="theme-switch-thumb"></span></span><span
+          class="theme-switch-label">Light</span></button>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Changer la langue">EN</button>
+    </nav>
   </header>
-  <section class="home-hero">
-    <div class="home-hero__content">
-      <h1 class="heading-primary">Josias DJOSSOU-DAN</h1>
-      <div class="home-hero__info">
-        <p class="text-primary">
-          Étudiant en Informatque à la faculté des sciences et technologies de l'Université de Haute Alsace de Mulhouse.
-        </p>
-      </div>
-      <div class="home-hero__cta">
-        <a href="./#projects" class="btn btn--bg">Projets</a>
-      </div>
-    </div>
-    <div class="home-hero__socials">
-      <div class="home-hero__social">
-        <a href="https://www.linkedin.com/in/josiashod/" class="home-hero__social-icon-link">
-          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://github.com/josiashod" class="home-hero__social-icon-link">
-          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://codepen.io/josiashod" class="home-hero__social-icon-link">
-          <img src="./assets/png/codepen-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://twitter.com/josias_hod" class="home-hero__social-icon-link">
-          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-    </div>
-    <div class="home-hero__mouse-scroll-cont">
-      <div class="mouse"></div>
-    </div>
-  </section>
-  <section id="about" class="about sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main">À propos de moi</span>
-        <!-- <span class="heading-sec__sub">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-          tempora explicabo quae quod deserunt eius sapiente
-        </span> -->
-      </h2>
-      <div class="about__content">
-        <div class="about__content-main">
-          <h3 class="about__content-title">Apprenez à me connaître !</h3>
-          <div class="about__content-details">
-            <p class="about__content-details-para">
-              Salut, je m'appelle <strong>Josias DJOSSOU-DAN</strong>. Étudiant en informatique, je suis passionné par
-              le
-              développement de logiciels et la programmation. J'ai déjà eu l'occasion de mettre en pratique mes
-              compétences en
-              programmation à travers des projets en C, C++, Python... Ainsi que des compétences en développement web.
-            </p>
-            <p class="about__content-details-para">
-              Je suis à la recherche d’un stage afin d'acquérir une expérience professionnelle solide, mais aussi
-              d’une alternance pour le cycle ingénieur que je compte entamer
-              l'année prochaine n’hésitez donc pas à me <strong>contacter</strong>.
-            </p>
-          </div>
-          <!-- <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">me Contacter</a> -->
-        </div>
-        <div class="about__content-skills">
-          <h3 class="about__content-title">Mes Compétences</h3>
-          <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">C/C++</div>
-            <div class="skills__skill">Java</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">Python</div>
-            <div class="skills__skill">ReactJs</div>
-            <div class="skills__skill">VueJs</div>
-            <div class="skills__skill">Laravel</div>
-            <div class="skills__skill">Symphony</div>
-            <div class="skills__skill">Django</div>
-            <div class="skills__skill">Django Rest</div>
-            <div class="skills__skill">MySql</div>
-            <div class="skills__skill">MariaDB</div>
-            <div class="skills__skill">PostgreSql</div>
-            <div class="skills__skill">Bash</div>
-            <div class="skills__skill">GIT</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projets</span>
-        <span class="heading-sec__sub">
-          Durant ma formation, j'ai eu à réaliser certains projets dans le but
-          d'acquérir certaines compétences
-        </span>
-      </h2>
 
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/pomodoro.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="hero-kicker"><span class="hero-kicker-dot"></span><span data-i18n="heroKicker">Développeur logiciel · CDI</span></p>
+          <h1>Josias <strong>DJOSSOU-DAN</strong></h1>
+          <p class="hero-text">
+            <span data-i18n="heroText">Développeur logiciel orienté optimisation, algorithmie et outils métiers. Je
+              recherche un CDI pour
+              contribuer à des projets exigeants, maintenables et performants.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="heroProjects">Explorer les projets</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="heroContact">Me contacter</a>
+            <a href="./assets/pdf/josias_djossou-dan_cv_fr.pdf" class="btn btn-cv" data-cv-link download
+              data-i18n="heroCv">Télécharger le CV</a>
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Pomodoro</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'un pomodoro avec le framework React/Js
-            </p>
-            <a href="./pomodoro.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/minesweeper.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Démineur</h3>
-            <p class="projects__row-content-desc">
-              Réalisation du jeu démineur avec le framework React/Js
-            </p>
-            <a href="./minesweeper.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/random_quote.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Random quote machine</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'un projet de génération aléatoire de citation en HTML5/CSS3 et JQuery
-            </p>
-            <a href="./random_quote.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
+
+          <div class="hero-socials" aria-label="Réseaux sociaux">
+            <a href="https://www.linkedin.com/in/josiashod/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/josiashod" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://codepen.io/josiashod" target="_blank" rel="noreferrer">CodePen</a>
+            <a href="https://twitter.com/josias_hod" target="_blank" rel="noreferrer">Twitter</a>
           </div>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/calculator.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
+
+        <aside class="hero-dashboard reveal" aria-label="Résumé du profil">
+          <div class="terminal">
+            <div class="terminal-top"><span></span><span></span><span></span></div>
+            <pre><b>$</b> cat profile.txt
+role: developpeur_logiciel
+stack: c++ qt python react sql
+goal: cdi developpement logiciel
+location: Mulhouse, France</pre>
+
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">E-Calculatrice</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'une calculatrice avec le framework React/Js
-            </p>
-            <a href="./calculatrice.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">À propos</p>
+          <h2 data-i18n="aboutTitle">Développement logiciel, performance et interfaces utiles.</h2>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/memory_card.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Memory Card</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'un jeu de mémoire avec HTML5/CSS3 et Javascript 
-            </p>
-            <a href="./memory_card.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/nature_protector.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Nature protector</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'un site web static one-page
-            </p>
-            <a href="./nature_protector.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/birthday.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">My Tribute Page</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'une page static pour mon anniversaire
-            </p>
-            <a href="./tribute_page.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="https://camo.githubusercontent.com/02b0ae9b0f75acbd06b7df2243fe8818f185f5d652d98131353617721ccf17a9/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6c6f775f6c6576656c5f70726f6772616d6d696e672f3233352f7368656c6c2e6a706567" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Shell</h3>
-            <p class="projects__row-content-desc">
-              Réalisation d'un shell en C
-            </p>
-            <a href="./simple_shell.html" class="btn btn--med btn--theme dynamicBgClr">Voir plus</a>
-          </div>
+
+        <div class="about-grid">
+          <article class="about-card featured reveal">
+            <div>
+              <h3 data-i18n="aboutWhoTitle">Qui je suis</h3>
+              <p>
+                <span data-i18n="aboutWhoText">Développeur logiciel avec une expérience chez Siemens Mobility, je
+                  travaille sur l'optimisation, les
+                  outils d'analyse et les applications en C++, Qt, Python et web.</span>
+              </p>
+            </div>
+            <p data-i18n="aboutGoal">Je recherche un CDI en développement logiciel, avec un intérêt fort pour la
+              performance et la qualité.</p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3 data-i18n="aboutWorkTitle">Ma façon de travailler</h3>
+            <ul class="about-list">
+              <li data-i18n="aboutWork1">Optimisation d'algorithmes et profiling.</li>
+              <li data-i18n="aboutWork2">Interfaces Qt, PyQt, Swing et web.</li>
+              <li data-i18n="aboutWork3">Tests, documentation et non-régression.</li>
+              <li data-i18n="aboutWork4">Travail en équipe Agile/Scrum.</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- <section id="contact" class="contact sec-pad dynamicBg">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-        <span class="heading-sec__sub heading-sec__sub--lt">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-          tempora explicabo quae quod deserunt eius sapiente
-        </span>
-      </h2>
-      <div class="contact__form-container">
-        <form action="#" class="contact__form">
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
-              id="name" />
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Compétences</p>
+          <h2 data-i18n="skillsTitle">Stack technique.</h2>
+        </div>
+
+        <div class="skills-grid skills-grid-dense">
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Langages" data-i18n-en="Languages">Langages</h3>
+            <div class="skill-badges">
+              <span>C</span><span>C++</span><span>Python</span><span>Java</span><span>PHP</span><span>TypeScript</span><span>JavaScript</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Fondamentaux" data-i18n-en="Fundamentals">Fondamentaux</h3>
+            <div class="skill-badges">
+              <span data-i18n-fr="P.O.O" data-i18n-en="O.O.P">P.O.O</span><span>S.O.L.I.D</span><span data-i18n-fr="Structures de données" data-i18n-en="Data structures">Structures de
+                données</span><span>Optimisation</span><span data-i18n-fr="Gestion mémoire" data-i18n-en="Memory management">Gestion mémoire</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Logiciel / UI" data-i18n-en="Software / UI">Logiciel / UI</h3>
+            <div class="skill-badges">
+              <span>Qt</span><span>PyQt</span><span>Swing</span><span>Pygame</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Web</h3>
+            <div class="skill-badges">
+              <span>React</span><span>Next.js</span><span>HTML/CSS</span><span>Laravel</span><span>Symfony</span><span>Django</span><span>AdonisJS</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Tests" data-i18n-en="Testing">Tests</h3>
+            <div class="skill-badges">
+              <span>Doctest</span><span>Pytest</span><span>JUnit</span><span data-i18n-fr="Tests de non-régression" data-i18n-en="Non-regression tests">Tests de non-régression</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Bases de données" data-i18n-en="Databases">Bases de données</h3>
+            <div class="skill-badges">
+              <span>MySQL</span><span>MariaDB</span><span>PostgreSQL</span><span>SQLite</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Outils" data-i18n-en="Tools">Outils</h3>
+            <div class="skill-badges">
+              <span>Git</span><span>VS Code</span><span>Qt
+                Creator</span><span>Jira</span><span>Trello</span><span>Modelio</span><span>Mermaid</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n-fr="Méthodes" data-i18n-en="Methods">Méthodes</h3>
+            <div class="skill-badges">
+              <span>Agile</span><span>Scrum</span><span>Documentation</span><span>Profiling</span><span>Performance</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="experienceEyebrow">Expériences </p>
+          <h2 data-i18n="experienceTitle">Parcours professionnelles.</h2>
+        </div>
+
+        <div class="timeline-wrap">
+          <article class="timeline-card reveal">
+            <p class="timeline-date">09/2025 - 09/2026</p>
+            <div class="timeline-item">
+              <h3 data-i18n="exp1Title">Ingénieur logiciel en apprentissage · Siemens Mobility</h3>
+              <p data-i18n="exp1Summary">Optimisation d'une application de simulation d'équipements ferroviaires.</p>
+              <ul>
+                <li data-i18n="exp1Item1">Identification des goulots d'étranglement avec Valgrind / Callgrind.</li>
+                <li data-i18n="exp1Item2">Mise en place de classes de suivi personnalisées pour logger les performances.</li>
+                <li data-i18n="exp1Item3">Architecture multithread pour paralléliser les processus d'initialisation.</li>
+                <li data-i18n="exp1Item4">Analyse et réécriture de fonctions critiques pour réduire la complexité temporelle.</li>
+                <li data-i18n="exp1Item5">Tests de non-régression après modifications structurelles.</li>
+                <li data-i18n="exp1Item6">Réduction de 85 % du temps de traitement de l'application.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card reveal">
+            <p class="timeline-date">05/2025 - 09/2025</p>
+            <div class="timeline-item">
+              <h3 data-i18n="exp2Title">Ingénieur logiciel stagiaire · Siemens Mobility</h3>
+              <p data-i18n="exp2Summary">Développement d'un outil d'analyse de logs avec Qt.</p>
+              <ul>
+                <li data-i18n="exp2Item1">Composants modulaires pour traitement de données en temps réel.</li>
+                <li data-i18n="exp2Item2">Optimisation de l'interface pour améliorer la réactivité.</li>
+                <li data-i18n="exp2Item3">Extension d'une architecture orientée événements.</li>
+                <li data-i18n="exp2Item4">Interface multi-fenêtres avec panneaux ancrables et détachables.</li>
+                <li data-i18n="exp2Item5">Documentation technique et guides d'utilisation.</li>
+                <li data-i18n="exp2Item6">Chaîne d'outils : compilation, lint et formatage.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="educationEyebrow">Formations</p>
+          <h2 data-i18n="educationTitle">Parcours académique.</h2>
+        </div>
+
+        <div class="timeline-wrap">
+          <article class="timeline-card reveal">
+            <p class="timeline-date">2026</p>
+            <div class="timeline-item">
+              <h3 data-i18n-fr="Master M2 · Science et ingénierie logiciel" data-i18n-en="Master's Year 2 · Software Science and Engineering">Master M2 · Science et ingénierie logiciel</h3>
+              <p data-i18n-fr="Université de Strasbourg." data-i18n-en="University of Strasbourg.">Université de Strasbourg.</p>
+            </div>
+          </article>
+
+          <article class="timeline-card reveal">
+            <p class="timeline-date">2025</p>
+            <div class="timeline-item">
+              <h3 data-i18n-fr="Master M1 · Informatique et mobilité" data-i18n-en="Master's Year 1 · Computer Science and Mobility">Master M1 · Informatique et mobilité</h3>
+              <p data-i18n-fr="Université de Haute-Alsace." data-i18n-en="University of Haute-Alsace.">Université de Haute-Alsace.</p>
+            </div>
+          </article>
+
+          <article class="timeline-card reveal">
+            <p class="timeline-date">2024</p>
+            <div class="timeline-item">
+              <h3 data-i18n-fr="Licence · Informatique" data-i18n-en="Bachelor's degree · Computer Science">Licence · Informatique</h3>
+              <p data-i18n-fr="Université de Haute-Alsace." data-i18n-en="University of Haute-Alsace.">Université de Haute-Alsace.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Projets</p>
+          <h2 data-i18n="projectsTitle">Projets.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type">C++ · Qt · SQLite</p>
+              <h3>Simulation V2V</h3>
+              <p data-i18n-fr="Simulation de connexions véhicule à véhicule avec carte, graphe routier et calcul d'itinéraires." data-i18n-en="Vehicle-to-vehicle connection simulation with map rendering, road graph and route calculation.">Simulation de connexions véhicule à véhicule avec carte, graphe routier et calcul d'itinéraires.</p>
+              <a href="./v2v.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type">Python · Pygame</p>
+              <h3>Simulation Boids</h3>
+              <p data-i18n-fr="Modélisation de comportements collectifs avec agents autonomes et calcul vectoriel." data-i18n-en="Collective behavior modeling with autonomous agents and vector calculations.">Modélisation de comportements collectifs avec agents autonomes et calcul vectoriel.</p>
+              <a href="./boids.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="React · Productivité" data-i18n-en="React · Productivity">React · Productivité</p>
+              <h3>Pomodoro</h3>
+              <p data-i18n-fr="Minuteur inspiré de la technique Pomodoro pour organiser les sessions de travail." data-i18n-en="Timer inspired by the Pomodoro technique to organize focused work sessions.">Minuteur inspiré de la technique Pomodoro pour organiser les sessions de travail.</p>
+              <a href="./pomodoro.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="React · Jeu" data-i18n-en="React · Game">React · Jeu</p>
+              <h3 data-i18n-fr="Démineur" data-i18n-en="Minesweeper">Démineur</h3>
+              <p data-i18n-fr="Jeu de réflexion avec logique de grille, cases révélées et détection des mines." data-i18n-en="Puzzle game with grid logic, revealed cells and mine detection.">Jeu de réflexion avec logique de grille, cases révélées et détection des mines.</p>
+              <a href="./minesweeper.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type">HTML · CSS · jQuery</p>
+              <h3>Random Quote Machine</h3>
+              <p data-i18n-fr="Générateur aléatoire de citations pour pratiquer les interactions simples." data-i18n-en="Random quote generator built to practice simple interactions.">Générateur aléatoire de citations pour pratiquer les interactions simples.</p>
+              <a href="./random_quote.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="React · Calcul" data-i18n-en="React · Calculator">React · Calcul</p>
+              <h3 data-i18n-fr="E-Calculatrice" data-i18n-en="E-Calculator">E-Calculatrice</h3>
+              <p data-i18n-fr="Calculatrice web pour travailler les composants, les états et l'affichage dynamique." data-i18n-en="Web calculator focused on components, state management and dynamic rendering.">Calculatrice web pour travailler les composants, les états et l'affichage dynamique.</p>
+              <a href="./calculatrice.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="JavaScript · Jeu" data-i18n-en="JavaScript · Game">JavaScript · Jeu</p>
+              <h3>Memory Card</h3>
+              <p data-i18n-fr="Jeu de mémoire basé sur la manipulation du DOM et la logique de partie." data-i18n-en="Memory game based on DOM manipulation and game-state logic.">Jeu de mémoire basé sur la manipulation du DOM et la logique de partie.</p>
+              <a href="./memory_card.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="Site statique" data-i18n-en="Static website">Site statique</p>
+              <h3>Nature Protector</h3>
+              <p data-i18n-fr="One-page statique pour pratiquer la mise en page et le responsive." data-i18n-en="Static one-page website built to practice layout and responsiveness.">One-page statique pour pratiquer la mise en page et le responsive.</p>
+              <a href="./nature_protector.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type">HTML · CSS</p>
+              <h3>My Tribute Page</h3>
+              <p data-i18n-fr="Page statique personnelle, centrée sur la structure et la présentation." data-i18n-en="Personal static page focused on structure and presentation.">Page statique personnelle, centrée sur la structure et la présentation.</p>
+              <a href="./tribute_page.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+
+          <article class="project-card simple reveal">
+            <div class="project-body">
+              <p class="project-type" data-i18n-fr="C · Système" data-i18n-en="C · Systems">C · Système</p>
+              <h3>Simple Shell</h3>
+              <p data-i18n-fr="Shell en C pour comprendre l'exécution de commandes et les bases système." data-i18n-en="C shell project to understand command execution and systems programming basics.">Shell en C pour comprendre l'exécution de commandes et les bases système.</p>
+              <a href="./simple_shell.html"><span data-i18n="studyProject">Étudier le projet</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-card reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Parlons CDI ou projet logiciel.</h2>
+          <p class="contact-intro">
+            <span data-i18n="contactIntro">Pour une opportunité CDI, une mission ou un projet logiciel.</span>
+          </p>
+
+          <div class="contact-list">
+            <a href="mailto:josiashod@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              <span>josiashod@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/josiashod/" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10v8"></path>
+                <path d="M7 6v.01"></path>
+                <path d="M11 18v-8"></path>
+                <path d="M11 14c0-2.4 1.3-4 3.4-4 2 0 2.6 1.3 2.6 3.5V18"></path>
+                <path d="M4 3h16v18H4z"></path>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/josiashod" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.2 19c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.1-3.4-1.1-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.8c0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z">
+                </path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://codepen.io/josiashod" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m12 2 9 6v8l-9 6-9-6V8z"></path>
+                <path d="m12 2v7"></path>
+                <path d="m12 15v7"></path>
+                <path d="m3 8 9 7 9-7"></path>
+                <path d="m3 16 9-7 9 7"></path>
+              </svg>
+              <span>CodePen</span>
+            </a>
           </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
-              id="email" />
+        </div>
+
+        <form class="contact-card contact-form reveal" data-contact-form data-email="josiashod@gmail.com">
+          <div class="form-row">
+            <div class="field">
+              <label for="name" data-i18n="formName">Nom</label>
+              <input id="name" name="name" type="text" placeholder="Votre nom" data-i18n-placeholder="placeholderName"
+                required>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="formEmail">Email</label>
+              <input id="email" name="email" type="email" placeholder="vous@email.com"
+                data-i18n-placeholder="placeholderEmail" required>
+            </div>
           </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
-              name="message" id="message"></textarea>
+
+          <div class="field">
+            <label for="subject" data-i18n="formSubject">Objet</label>
+            <input id="subject" name="subject" type="text" placeholder="CDI, mission, projet..."
+              data-i18n-placeholder="placeholderSubject" required>
           </div>
-          <button type="submit" class="btn btn--theme contact__btn">
-            Submit
-          </button>
+
+          <div class="field">
+            <label for="message" data-i18n="formMessage">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Bonjour Josias..."
+              data-i18n-placeholder="placeholderMessage" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" data-i18n="formSend">Envoyer le message</button>
+          </div>
+          <p class="form-note" data-i18n="formNote">Aucune donnée n'est stockée par ce site.</p>
         </form>
       </div>
-    </div>
-  </section> -->
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Réseaux sociaux</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/josiashod/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/josiashod">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://codepen.io/josiashod">
-              <img class="main-footer__icon" src="./assets/png/codepen-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/josias_hod">
-              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
-            </a>
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">Josias DJOSSOU-DAN</h4>
-          <p class="main-footer__short-desc">
-            Étudiant en Informatque à la faculté des sciences et technologies de l'Université de Haute Alsace de Mulhouse.
-          </p>
-        </div>
-      </div>
+    </section>
+  </main>
 
-      <div class="main-footer__lower">
-        &copy; Copyright <script> document.write((new Date()).getFullYear()) </script>. Powered by @me
-      </div>
-    </div>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Josias DJOSSOU-DAN. Powered by @me</p>
+    <a href="#home">Retour en haut</a>
   </footer>
 
   <script src="./index.js"></script>

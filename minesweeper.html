@@ -1,161 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Josiashod | Projet: Démineur</title>
-  <meta name="description" content="Case study page of Project" />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Démineur | Josias DJOSSOU-DAN</title>
+  <meta name="description" content="Étude du projet Démineur de Josias DJOSSOU-DAN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/svg/site-icon.svg" type="image/svg+xml">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/IMG_1081.jpg" alt="Josias DJOSSOU-DAN Image" class="header__logo-img" />
-        </div>
-        <span class="header__logo-sub">Josias DJOSSOU-DAN</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/" class="header__link"> Accueil </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#about" class="header__link">À propos de moi</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#projects" class="header__link">
-              Projets
-            </a>
-          </li>
-          <!-- <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#contact" class="header__link"> Contacts </a>
-          </li> -->
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/"> Accueil </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#about"> À propos de moi </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#projects"> Projets </a>
-          </li>
-
-          <!-- <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#contact"> Contact </a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
+  <header class="site-header">
+    <a href="./index.html" class="brand header-profile" aria-label="Accueil"><span class="profile-avatar">JD</span><span class="header-profile-text"><strong>Josias DJOSSOU-DAN</strong><small data-i18n="role">Développeur logiciel</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="./index.html#about" data-i18n="navAbout">À propos</a>
+      <a href="./index.html#skills" data-i18n="navSkills">Compétences</a>
+      <a href="./index.html#projects" data-i18n="navProjects">Projets</a>
+      <a href="./index.html#experience" data-i18n="navExperience">Expériences</a>
+      <a href="./index.html#education" data-i18n="navEducation">Formations</a>
+      <a href="./index.html#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      <button class="theme-switch nav-theme" type="button" data-theme-toggle aria-label="Changer le thème"><span class="theme-switch-track"><span class="theme-switch-thumb"></span></span><span class="theme-switch-label">Light</span></button>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Changer la langue">EN</button>
+    </nav>
   </header>
-  <section class="project-cs-hero">
-    <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Démineur</h1>
-      <div class="project-cs-hero__info">
-        <p class="text-primary">
-          Réalisation du jeu démineur avec le framework React/Js
-        </p>
-      </div>
-      <div class="project-cs-hero__cta">
-        <a href="https://josh-minesweeper.netlify.app/" class="btn btn--bg" target="_blank">Voir le rendu</a>
-      </div>
-    </div>
-  </section>
-  <section class="project-details">
-    <div class="main-container">
-      <div class="project-details__content">
-        <div class="project-details__showcase-img-cont">
-          <img src="./assets/png/minesweeper.png" alt="Project Image" class="project-details__showcase-img" />
-        </div>
-        <div class="project-details__content-main">
-          <div class="project-details__desc">
-            <h3 class="project-details__content-title">Description du projet</h3>
-            <p class="project-details__desc-para">
-              Le Démineur (Minesweeper) est un jeu de réflexion dont le but est de localiser des mines cachées
-              dans une grille représentant un champ de mines virtuel, avec pour seule indication le nombre de mines dans
-              les zones adjacentes.
-            </p>
-          </div>
-          <div class="project-details__tools-used">
-            <h3 class="project-details__content-title">Outils utilisés</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">ReactJS</div>
-            </div>
-          </div>
-          <div class="project-details__links">
-            <h3 class="project-details__content-title">Liens</h3>
-            <a href="https://josh-minesweeper.netlify.app/" class="btn btn--med btn--theme project-details__links-btn"
-              target="_blank">Voir le rendu</a>
-            <a href="https://github.com/josiashod/minesweeper_game"
-              class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Lien du code</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Réseaux sociaux</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/josiashod/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/josiashod">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://codepen.io/josiashod">
-              <img class="main-footer__icon" src="./assets/png/codepen-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/josias_hod">
-              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
-            </a>
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">Josias DJOSSOU-DAN</h4>
-          <p class="main-footer__short-desc">
-            Étudiant en Informatque à la faculté des sciences et technologies de l'Université de Haute Alsace de
-            Mulhouse.
-          </p>
-        </div>
-      </div>
 
-      <div class="main-footer__lower">
-        &copy; Copyright
-        <script> document.write((new Date()).getFullYear()) </script>. Powered by @me
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-layout">
+        <div class="reveal">
+          <p class="project-kicker" data-i18n-fr="React · Jeu de réflexion" data-i18n-en="React · Puzzle game">React · Jeu de réflexion</p>
+          <h1 data-i18n-fr="Démineur" data-i18n-en="Minesweeper">Démineur</h1>
+          <p data-i18n-fr="Jeu de réflexion où le joueur doit localiser les mines cachées grâce aux indices numériques de la grille." data-i18n-en="Puzzle game where the player locates hidden mines using numeric clues on the grid.">Jeu de réflexion où le joueur doit localiser les mines cachées grâce aux indices numériques de la grille.</p>
+          <div class="project-actions">
+            <a href="https://josh-minesweeper.netlify.app/" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="viewDemo">Voir le rendu</span></a>
+            <a href="https://github.com/josiashod/minesweeper_game" class="btn btn-ghost" target="_blank" rel="noreferrer"><span data-i18n="viewCode">Voir le code</span></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+
+    <section class="section project-demo">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="demoEyebrow">Démo</p><h2 data-i18n="demoTitle">Voir le projet en action.</h2></div>
+        <div class="demo-frame reveal">
+          <iframe src="https://josh-minesweeper.netlify.app/" title="Démo du projet Démineur" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-detail-grid">
+        <article class="project-copy reveal">
+          <h2 data-i18n="projectDescription">Description du projet</h2>
+          <p data-i18n-fr="Le Démineur consiste à découvrir les cases d'une grille sans cliquer sur une mine. Les nombres affichés indiquent combien de mines se trouvent dans les zones adjacentes." data-i18n-en="Minesweeper consists of revealing grid cells without clicking on a mine. Displayed numbers indicate how many mines are in adjacent areas.">Le Démineur consiste à découvrir les cases d'une grille sans cliquer sur une mine. Les nombres affichés indiquent combien de mines se trouvent dans les zones adjacentes.</p>
+          <p data-i18n-fr="Le projet m'a permis de travailler la logique de grille, les états de jeu, les interactions et le rendu dynamique avec React." data-i18n-en="This project helped me work on grid logic, game states, interactions and dynamic rendering with React.">Le projet m'a permis de travailler la logique de grille, les états de jeu, les interactions et le rendu dynamique avec React.</p>
+        </article>
+        <aside class="project-side">
+          <div class="project-panel reveal"><h3 data-i18n="projectTech">Technologies utilisées</h3><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ReactJS</span></div></div>
+          <div class="project-panel reveal"><h3 data-i18n="projectSkills">Compétences développées</h3><ul class="detail-list"><li data-i18n-fr="Gestion d'une grille dynamique." data-i18n-en="Dynamic grid management.">Gestion d'une grille dynamique.</li><li data-i18n-fr="Algorithme de révélation des cases." data-i18n-en="Cell reveal algorithm.">Algorithme de révélation des cases.</li><li data-i18n-fr="Gestion d'état de partie : victoire, défaite et progression." data-i18n-en="Game-state management: win, loss and progression.">Gestion d'état de partie : victoire, défaite et progression.</li><li data-i18n-fr="Lecture des règles métier et traduction en logique applicative." data-i18n-en="Reading business rules and translating them into application logic.">Lecture des règles métier et traduction en logique applicative.</li></ul></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Josias DJOSSOU-DAN.</p><a href="./index.html#projects" data-i18n="navProjects"><span data-i18n="backProjects">Retour aux projets</span></a></footer>
   <script src="./index.js"></script>
 </body>
 

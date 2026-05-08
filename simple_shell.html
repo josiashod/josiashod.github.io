@@ -1,153 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Josiashod | Projet: Simple Shell</title>
-  <meta name="description" content="Case study page of Project" />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Simple Shell | Josias DJOSSOU-DAN</title>
+  <meta name="description" content="Étude du projet Simple Shell de Josias DJOSSOU-DAN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/svg/site-icon.svg" type="image/svg+xml">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/IMG_1081.jpg" alt="Josias DJOSSOU-DAN Image" class="header__logo-img" />
-        </div>
-        <span class="header__logo-sub">Josias DJOSSOU-DAN</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/" class="header__link"> Accueil </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#about" class="header__link">À propos de moi</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#projects" class="header__link">
-              Projets
-            </a>
-          </li>
-          <!-- <li class="header__link-wrapper">
-            <a href="josiashod.github.io/#contact" class="header__link"> Contacts </a>
-          </li> -->
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/"> Accueil </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#about"> À propos de moi </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#projects"> Projets </a>
-          </li>
-
-          <!-- <li class="header__sm-menu-link">
-            <a href="josiashod.github.io/#contact"> Contact </a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
+  <header class="site-header">
+    <a href="./index.html" class="brand header-profile" aria-label="Accueil"><span class="profile-avatar">JD</span><span class="header-profile-text"><strong>Josias DJOSSOU-DAN</strong><small data-i18n="role">Développeur logiciel</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="./index.html#about" data-i18n="navAbout">À propos</a><a href="./index.html#skills" data-i18n="navSkills">Compétences</a><a href="./index.html#projects" data-i18n="navProjects">Projets</a><a href="./index.html#experience" data-i18n="navExperience">Expériences</a><a href="./index.html#education" data-i18n="navEducation">Formations</a><a href="./index.html#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      <button class="theme-switch nav-theme" type="button" data-theme-toggle aria-label="Changer le thème"><span class="theme-switch-track"><span class="theme-switch-thumb"></span></span><span class="theme-switch-label">Light</span></button>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Changer la langue">EN</button>
+    </nav>
   </header>
-  <section class="project-cs-hero">
-    <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Simple shell</h1>
-      <div class="project-cs-hero__info">
-        <p class="text-primary">
-          Réalisation d'un shell
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="project-details">
-    <div class="main-container">
-      <div class="project-details__content">
-        <div class="project-details__showcase-img-cont">
-          <img src="https://camo.githubusercontent.com/02b0ae9b0f75acbd06b7df2243fe8818f185f5d652d98131353617721ccf17a9/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6c6f775f6c6576656c5f70726f6772616d6d696e672f3233352f7368656c6c2e6a706567" alt="Project Image" class="project-details__showcase-img" />
-        </div>
-        <div class="project-details__content-main">
-          <div class="project-details__desc">
-            <h3 class="project-details__content-title">Description du projet</h3>
-            <p class="project-details__desc-para">
-              L'objectif de ce projet est la reproduction du shell de linux avec certaines commandes de bases tels que
-              ls ou encore cd. Ce projet à nécessité la compréhension une bonne compréhension de la gestion des
-              processus.
-            </p>
-          </div>
-          <div class="project-details__tools-used">
-            <h3 class="project-details__content-title">Outils utilisés</h3>
-            <div class="skills">
-              <div class="skills__skill">C</div>
-            </div>
-          </div>
-          <div class="project-details__links">
-            <h3 class="project-details__content-title">Liens</h3>
-            <a href="https://github.com/josiashod/simple_shell"
-              class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Lien du code</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Réseaux sociaux</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/josiashod/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/josiashod">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://codepen.io/josiashod">
-              <img class="main-footer__icon" src="./assets/png/codepen-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/josias_hod">
-              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
-            </a>
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">Josias DJOSSOU-DAN</h4>
-          <p class="main-footer__short-desc">
-            Étudiant en Informatque à la faculté des sciences et technologies de l'Université de Haute Alsace de
-            Mulhouse.
-          </p>
-        </div>
-      </div>
 
-      <div class="main-footer__lower">
-        &copy; Copyright
-        <script> document.write((new Date()).getFullYear()) </script>. Powered by @me
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-layout">
+        <div class="reveal">
+          <p class="project-kicker" data-i18n-fr="C · Système" data-i18n-en="C · Systems">C · Système</p>
+          <h1>Simple Shell</h1>
+          <p data-i18n-fr="Reproduction d'un shell Linux avec certaines commandes de base et une exploration de la gestion des processus." data-i18n-en="Linux shell reproduction with basic commands and process-management exploration.">Reproduction d'un shell Linux avec certaines commandes de base et une exploration de la gestion des processus.</p>
+          <div class="project-actions"><a href="https://github.com/josiashod/simple_shell" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="viewCode">Voir le code</span></a></div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+
+    <section class="section project-demo">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="demoEyebrow">Démo</p><h2 data-i18n="repoDemoTitle">Projet consultable dans le dépôt.</h2></div>
+        <div class="demo-placeholder reveal">
+          <div>
+            <p data-i18n-fr="Ce projet est un programme C côté terminal. La meilleure façon de le consulter est de lire le dépôt, le compiler et tester les commandes localement." data-i18n-en="This project is a terminal-based C program. The best way to explore it is to read the repository, compile it and test commands locally.">Ce projet est un programme C côté terminal. La meilleure façon de le consulter est de lire le dépôt, le compiler et tester les commandes localement.</p>
+            <div class="project-actions demo-actions"><a href="https://github.com/josiashod/simple_shell" class="btn btn-primary" target="_blank" rel="noreferrer"><span data-i18n="goCode">Aller au code</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-detail-grid">
+        <article class="project-copy reveal">
+          <h2 data-i18n="projectDescription">Description du projet</h2>
+          <p data-i18n-fr="L'objectif de ce projet est de reproduire un shell Linux avec certaines commandes de base comme ls ou cd." data-i18n-en="The goal of this project is to reproduce a Linux shell with basic commands such as ls or cd.">L'objectif de ce projet est de reproduire un shell Linux avec certaines commandes de base comme ls ou cd.</p>
+          <p data-i18n-fr="Ce projet a nécessité une meilleure compréhension de l'exécution de commandes, de la gestion des processus et des bases de la programmation système en C." data-i18n-en="This project required a stronger understanding of command execution, process management and systems programming basics in C.">Ce projet a nécessité une meilleure compréhension de l'exécution de commandes, de la gestion des processus et des bases de la programmation système en C.</p>
+        </article>
+        <aside class="project-side">
+          <div class="project-panel reveal"><h3 data-i18n="projectTech">Technologies utilisées</h3><div class="project-tags"><span>C</span><span>Linux</span><span>Shell</span></div></div>
+          <div class="project-panel reveal"><h3 data-i18n="projectSkills">Compétences développées</h3><ul class="detail-list"><li data-i18n-fr="Lecture et parsing de commandes utilisateur." data-i18n-en="Reading and parsing user commands.">Lecture et parsing de commandes utilisateur.</li><li data-i18n-fr="Gestion des processus et exécution de programmes." data-i18n-en="Process management and program execution.">Gestion des processus et exécution de programmes.</li><li data-i18n-fr="Manipulation de chaînes et tableaux en C." data-i18n-en="String and array manipulation in C.">Manipulation de chaînes et tableaux en C.</li><li data-i18n-fr="Lecture de l'environnement système et rigueur mémoire." data-i18n-en="System environment reading and memory discipline.">Lecture de l'environnement système et rigueur mémoire.</li></ul></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Josias DJOSSOU-DAN.</p><a href="./index.html#projects" data-i18n="navProjects"><span data-i18n="backProjects">Retour aux projets</span></a></footer>
   <script src="./index.js"></script>
 </body>
 
