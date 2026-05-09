@@ -267,8 +267,8 @@ button {
   inset: -90px;
   z-index: 1;
   background:
-    linear-gradient(color-mix(in srgb, var(--green) 32%, transparent) 2px, transparent 2px),
-    linear-gradient(90deg, color-mix(in srgb, var(--text) 19%, transparent) 2px, transparent 2px);
+    linear-gradient(color-mix(in srgb, var(--green) 32%, transparent) 1.75px, transparent 1.75px),
+    linear-gradient(90deg, color-mix(in srgb, var(--text) 19%, transparent) 1.75px, transparent 1.75px);
   background-size: 54px 54px;
   background-position: 0 0, 0 0;
   opacity: 0.36;
@@ -280,8 +280,8 @@ button {
 
 body[data-theme="light"] .hero::after {
   background:
-    linear-gradient(color-mix(in srgb, var(--green) 42%, transparent) 2px, transparent 2px),
-    linear-gradient(90deg, color-mix(in srgb, var(--text) 25%, transparent) 2px, transparent 2px);
+    linear-gradient(color-mix(in srgb, var(--green) 42%, transparent) 1.75px, transparent 1.75px),
+    linear-gradient(90deg, color-mix(in srgb, var(--text) 25%, transparent) 1.75px, transparent 1.75px);
   background-size: 54px 54px;
   mix-blend-mode: multiply;
   opacity: 0.3;
