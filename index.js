@@ -5,7 +5,6 @@ const sections = document.querySelectorAll('main section[id]');
 const year = document.querySelector('#year');
 const contactForm = document.querySelector('[data-contact-form]');
 const themeToggle = document.querySelector('[data-theme-toggle]');
-const themeLabel = document.querySelector('.theme-switch-label');
 const langToggle = document.querySelector('[data-lang-toggle]');
 const cvLink = document.querySelector('[data-cv-link]');
 const githubProjectsContainer = document.querySelector('[data-github-projects]');
@@ -354,9 +353,6 @@ const setLanguage = (lang) => {
 const setTheme = (theme) => {
   document.body.dataset.theme = theme;
   localStorage.setItem('portfolio-theme', theme);
-  if (themeLabel) {
-    themeLabel.textContent = theme === 'light' ? 'Night' : 'Light';
-  }
 };
 
 const savedTheme = localStorage.getItem('portfolio-theme');
