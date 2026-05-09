@@ -258,7 +258,7 @@ button {
 }
 
 .hero::before {
-  animation: heroGridDrift 18s linear infinite;
+  animation: heroGridDrift 60s linear infinite;
 }
 
 .hero::after {
@@ -274,7 +274,7 @@ button {
   opacity: 0.36;
   mix-blend-mode: screen;
   pointer-events: none;
-  animation: heroGridSlide 6.5s linear infinite;
+  animation: heroGridSlide 10.5s linear infinite;
   will-change: transform, background-position, opacity;
 }
 
