@@ -258,7 +258,7 @@ button {
 }
 
 .hero::before {
-  animation: heroGridDrift 60s linear infinite;
+  animation: heroGridDrift 10s linear infinite;
 }
 
 .hero::after {
@@ -274,7 +274,7 @@ button {
   opacity: 0.36;
   mix-blend-mode: screen;
   pointer-events: none;
-  animation: heroGridSlide 10.5s linear infinite;
+  animation: heroGridSlide 6.5s linear infinite;
   will-change: transform, background-position, opacity;
 }
 
@@ -406,46 +406,10 @@ body[data-theme="light"] .hero::after {
     opacity: 0.36;
   }
 
-  34% {
-    transform: translate3d(-37px, 0, 0);
-    background-position: -37px 0, -37px 0;
-    opacity: 0.36;
-  }
-
-  37% {
-    transform: translate3d(-20px, 0, 0);
-    background-position: -20px 0, -20px 0;
-    opacity: 0.44;
-  }
-
-  40% {
-    transform: translate3d(-48px, 0, 0);
-    background-position: -48px 0, -48px 0;
-    opacity: 0.4;
-  }
-
   50% {
     transform: translate3d(-54px, 0, 0);
     background-position: -54px 0, -54px 0;
     opacity: 0.36;
-  }
-
-  72% {
-    transform: translate3d(-78px, 0, 0);
-    background-position: -78px 0, -78px 0;
-    opacity: 0.36;
-  }
-
-  75% {
-    transform: translate3d(-98px, 0, 0);
-    background-position: -98px 0, -98px 0;
-    opacity: 0.43;
-  }
-
-  78% {
-    transform: translate3d(-86px, 0, 0);
-    background-position: -86px 0, -86px 0;
-    opacity: 0.38;
   }
 
   100% {
@@ -466,46 +430,10 @@ body[data-theme="light"] .hero::after {
     opacity: 0.3;
   }
 
-  34% {
-    transform: translate3d(-37px, 0, 0);
-    background-position: -37px 0, -37px 0;
-    opacity: 0.3;
-  }
-
-  37% {
-    transform: translate3d(-20px, 0, 0);
-    background-position: -20px 0, -20px 0;
-    opacity: 0.36;
-  }
-
-  40% {
-    transform: translate3d(-48px, 0, 0);
-    background-position: -48px 0, -48px 0;
-    opacity: 0.33;
-  }
-
   50% {
     transform: translate3d(-54px, 0, 0);
     background-position: -54px 0, -54px 0;
     opacity: 0.3;
-  }
-
-  72% {
-    transform: translate3d(-78px, 0, 0);
-    background-position: -78px 0, -78px 0;
-    opacity: 0.3;
-  }
-
-  75% {
-    transform: translate3d(-98px, 0, 0);
-    background-position: -98px 0, -98px 0;
-    opacity: 0.35;
-  }
-
-  78% {
-    transform: translate3d(-86px, 0, 0);
-    background-position: -86px 0, -86px 0;
-    opacity: 0.32;
   }
 
   100% {
