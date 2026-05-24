@@ -105,7 +105,7 @@ button {
   background: color-mix(in srgb, var(--surface) 88%, transparent);
   border-bottom: 1px solid var(--line);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 0;
   backdrop-filter: blur(20px);
   box-shadow: var(--shadow);
 }
@@ -128,7 +128,7 @@ button {
   width: 42px;
   height: 42px;
   flex: 0 0 42px;
-  border-radius: 50%;
+  border-radius: 0;
   font-size: 0.9rem;
 }
 
@@ -154,7 +154,7 @@ button {
 .brand-mark {
   width: 42px;
   height: 42px;
-  border-radius: 12px;
+  border-radius: 0;
   border: 1px solid rgba(15, 143, 131, 0.32);
   background: rgba(15, 143, 131, 0.06);
 }
@@ -196,7 +196,7 @@ button {
   align-items: center;
   color: #f8fffd;
   background: var(--green);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 0 14px;
 }
 
@@ -210,7 +210,7 @@ button {
   width: 42px;
   height: 42px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 0;
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -220,7 +220,7 @@ button {
   height: 2px;
   margin: 5px auto;
   background: var(--text);
-  border-radius: 2px;
+  border-radius: 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -443,7 +443,7 @@ body[data-theme="light"] .hero-name-card::before {
   width: 8px;
   height: 8px;
   flex: 0 0 8px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--green);
   box-shadow: none;
 }
@@ -673,7 +673,7 @@ body[data-theme="light"] .hero::after {
   justify-content: center;
   min-height: 38px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 0;
   color: var(--text);
   background: color-mix(in srgb, var(--surface-2) 74%, transparent);
   padding: 0;
@@ -697,7 +697,7 @@ body[data-theme="light"] .hero::after {
 .lang-switch {
   min-height: 36px;
   border: 1px solid var(--line);
-  border-radius: 7px;
+  border-radius: 0;
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
   padding: 0 12px;
@@ -720,7 +720,7 @@ body[data-theme="light"] .nav-theme .theme-switch-thumb {
   position: relative;
   width: 64px;
   height: 32px;
-  border-radius: 999px;
+  border-radius: 0;
   background: transparent;
   border: 0;
 }
@@ -732,7 +732,7 @@ body[data-theme="light"] .nav-theme .theme-switch-thumb {
   z-index: 1;
   width: 26px;
   height: 26px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--green);
   box-shadow: none;
   transition: transform 0.2s ease;
@@ -797,7 +797,7 @@ body[data-theme="light"] .theme-icon-moon::before {
   justify-content: center;
   min-height: 46px;
   padding: 0 22px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid transparent;
   font-weight: 850;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
@@ -884,7 +884,7 @@ body[data-theme="light"] .theme-icon-moon::before {
 
 .profile-card {
   padding: 24px;
-  border-radius: 18px;
+  border-radius: 0;
 }
 
 .profile-head {
@@ -898,7 +898,7 @@ body[data-theme="light"] .theme-icon-moon::before {
 .profile-avatar {
   width: 72px;
   height: 72px;
-  border-radius: 18px;
+  border-radius: 0;
 }
 
 .profile-head img {
@@ -954,7 +954,7 @@ body[data-theme="light"] .theme-icon-moon::before {
 .terminal-top span {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .terminal-top span:nth-child(1) {
@@ -1020,7 +1020,7 @@ body[data-theme="light"] .terminal pre {
 
 .mini-card {
   padding: 18px;
-  border-radius: 14px;
+  border-radius: 0;
 }
 
 .mini-card strong {
@@ -1207,7 +1207,7 @@ body[data-theme="light"] .terminal pre {
   font-family: var(--mono);
   font-size: 0.72rem;
   border: 1px solid color-mix(in srgb, var(--green) 30%, var(--line));
-  border-radius: 3px;
+  border-radius: 0;
   padding: 5px 9px;
   background: transparent;
 }
@@ -1225,7 +1225,7 @@ body[data-theme="light"] .terminal pre {
   font-size: 0.76rem;
   font-weight: 800;
   border: 1px solid color-mix(in srgb, var(--green) 28%, var(--line));
-  border-radius: 999px;
+  border-radius: 0;
   padding: 6px 12px;
   background: color-mix(in srgb, var(--surface-2) 66%, transparent);
 }
@@ -1244,7 +1244,7 @@ body[data-theme="light"] .terminal pre {
 
 .project-card {
   overflow: hidden;
-  border-radius: 22px;
+  border-radius: 0;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -1419,7 +1419,7 @@ body[data-theme="light"] .terminal pre {
   padding: 0 16px;
   color: var(--muted);
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 0;
   background: transparent;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
@@ -1540,7 +1540,7 @@ body[data-theme="light"] .terminal pre {
 .project-preview {
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: 0;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -1560,7 +1560,7 @@ body[data-theme="light"] .terminal pre {
 .demo-placeholder {
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: 0;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -1626,7 +1626,7 @@ body[data-theme="light"] .terminal pre {
 }
 
 .project-panel {
-  border-radius: 18px;
+  border-radius: 0;
   padding: 28px;
 }
 
@@ -1653,7 +1653,7 @@ body[data-theme="light"] .terminal pre {
 .next-card {
   min-height: 130px;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 0;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -1706,7 +1706,7 @@ body[data-theme="light"] .terminal pre {
     padding: 18px 22px 26px;
     background: color-mix(in srgb, var(--surface) 96%, #000 4%);
     border: 1px solid var(--line);
-    border-radius: 18px;
+    border-radius: 0;
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
