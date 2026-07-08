@@ -53,7 +53,7 @@ const translations = {
     githubDatePrefix: 'Créé en',
     githubLink: 'Voir sur GitHub',
     experienceEyebrow: 'Expériences',
-    experienceTitle: 'Parcours professionnelles.',
+    experienceTitle: 'Parcours professionnels.',
     exp1Title: 'Ingénieur logiciel en apprentissage · Siemens Mobility',
     exp1Summary: "Optimisation d'une application de simulation d'équipements ferroviaires.",
     exp1Item1: "Identification des goulots d'étranglement avec Valgrind / Callgrind.",
@@ -194,9 +194,9 @@ ingenieur_logiciel
 
 <b>$</b> cat focus.json
 {
-  "domaines": ["logiciel", "performance", "outils metiers"],
-  "langages": ["C++", "Python", "JavaScript", "SQL"],
-  "frameworks": ["Qt", "PyQt", "React"],
+  "domaines": ["développement logiciel", "développement web", "outils metiers"],
+  "langages": ["C++", "Python", "JavaScript", "Java"],
+  "frameworks": ["Qt", "PyQt", "React", "Spring Boot"],
   "pratiques": ["tests", "CI/CD", "profiling", "documentation"]
 }
 
@@ -209,7 +209,6 @@ ingenieur_logiciel
 <b>$</b> status --career
 recherche: CDI developpement logiciel
 localisation: France
-mode: curieux + rigoureux + equipe
 
 <b>$</b> <span class="terminal-cursor">_</span>`,
   en: `<b>$</b> whoami
@@ -217,9 +216,9 @@ software_engineer
 
 <b>$</b> cat focus.json
 {
-  "domains": ["software", "performance", "business tools"],
-  "languages": ["C++", "Python", "JavaScript", "SQL"],
-  "frameworks": ["Qt", "PyQt", "React"],
+  "domains": ["software development", "web development", "business tools"],
+  "languages": ["C++", "Python", "JavaScript", "Java"],
+  "frameworks": ["Qt", "PyQt", "React", "Spring Boot"],
   "practices": ["testing", "CI/CD", "profiling", "documentation"]
 }
 
@@ -232,7 +231,6 @@ software_engineer
 <b>$</b> status --career
 search: full-time software role
 location: France
-mode: curious + rigorous + team-minded
 
 <b>$</b> <span class="terminal-cursor">_</span>`
 };
