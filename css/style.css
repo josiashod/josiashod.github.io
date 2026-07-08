@@ -348,6 +348,12 @@ body[data-theme="light"] .hero-name-card::before {
   opacity: 0.72;
 }
 
+.hero-name-actions {
+  display: grid;
+  gap: 18px;
+  margin-top: clamp(28px, 4vw, 46px);
+}
+
 .hero-terminal-card {
   grid-column: 8 / span 5;
   grid-row: span 2;
